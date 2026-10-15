@@ -1,0 +1,21 @@
+# Member PII — never commit
+data/raw/
+data/processed/
+# Organization names and file names (see scripts/org_settings.py)
+data/private/
+
+# Member-derived outputs: the internal map (dots, workplace names) and preview images.
+# Only the aggregate public map in docs/ is published.
+outputs/
+
+# Employer names exactly as members typed them (can point to individuals)
+data/reference/company_locations.csv
+
+# Public boundary data; re-downloaded by scripts/01_fetch_reference.py
+data/reference/*.gpkg
+
+# QGIS temp/backup files
+*.qgz~
+*.qgs~
+.qgis_lock
+__pycache__/
